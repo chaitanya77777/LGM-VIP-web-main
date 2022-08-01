@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="Student">
+
+        <div class="form">
+            <div class="container">
+
+                <h1>Student Enrollment Form</h1>
+                <hr>
+    
+                Name : &nbsp;<input type="text" placeholder="Enter Name" name="Sname" id="Sname" required>
+                Admission No : &nbsp;<input type="text" placeholder="Enter Admission No." name="enroll" id="enroll" required>
+                College Name : &nbsp;<input type="text" placeholder="Enter College Name" name="college" id="college" required>
+                Semester : &nbsp;<input type="number" placeholder="Enter Semester" name="sem" id="sem" required>
+                Email Id : &nbsp;<input type="text" placeholder="Enter Email Id" name="email" id="email" autocomplete="off" required>
+                
+                
+
+                <hr>
+                <button class="btn btn-primary" onclick="AddRow()" id="enrollbtn">Submit</button>
+
+            </div>
+        </div>
+
+        <div class="form">
+
+            <div class="container">
+                <h1>Students List</h1>
+                <hr>
+            </div>
+
+            <table border="4" id="show">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Admission No</th>
+                        <th>Email Id</th>
+                        <th>Semester</th>
+                        <th>College Name</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
